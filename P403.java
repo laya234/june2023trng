@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Swap1
+class P403
 {
 public static void main(String args[])
 {
@@ -10,6 +10,6 @@ b=scob.nextInt();
 a=a+b;
 b=a-b;
 a=a-b;
-System.out.print(a+" "+b)
+System.out.println(a+" "+b);
 }
 }
