@@ -2,20 +2,22 @@ import java.util.*;
 class P1315 extends Exception{
 String msg;
 P1315(String msg){
-super(msg);
+super(msg);+
 this.msg=msg;
 }
 public String toString(){
 return msg;
 }
 }
-class Main{
+class P1316{
 public static void main(String args[]){
 Scanner sc=new Scanner(System.in);
-int age=sc.nextInt();
+int roll=sc.nextInt();
+String name=sc.next();
+int marks=sc.nextInt();
 try{
-if(age<18){
-throw new P1315("entered age does not fulfill required age limit");
+if(marks<0){
+throw new P1315("Marks should not be negative,Marks=0");
 }
 }
 catch(P1315 ex){
